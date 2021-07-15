@@ -1,0 +1,186 @@
+body{
+    background-image: url(./img/background.jpg);
+    width:100%;
+    height:80vh;
+    margin: 0;
+    padding:0;
+}
+
+
+/*header */
+
+.topo{
+    width:100%;
+    height:100px;
+}
+
+.title{
+    color: gold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-size:35px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+
+/*main */
+
+.container{
+    background-color: rgba(18, 245, 245, 0.301);
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;   
+}
+
+.btn{
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.473);
+    width: 40%;
+    height: 50px;
+    border-radius: 40px;
+    margin-left: 10px;
+}
+.btn:hover{
+    background-color: rgb(22, 115, 221);
+    color: white;
+    border: 2px solid black;
+}
+.container div{
+    width: 100%;
+}
+
+
+/* Intruções */
+.topinho{
+    display: flex;
+}
+.topinho img{
+    width: 50px;
+    height: 50px;
+}
+
+.meio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.623);
+    height:70vh;
+    padding-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.imagens .row img{
+    width: 100px;
+}
+.buttons-venc span{
+    font-size: 30px;
+    border: 2px solid black;
+    background-color: gold;
+    padding: 10px;
+    border-radius: 30px;
+}
+.buttons-venc{
+    margin-bottom: 30px;
+}
+
+.imagens .row img{
+    margin-right: 20px;
+
+}
+
+.instruction{
+    display:flex;
+    background-color: gold;
+    border: 2px solid black;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 40px;
+    padding: 15px;
+}
+
+/*Jogo*/
+.Escolhar{
+    display:flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.escolhas{
+    display:flex;
+    justify-content:center;
+    width: 100%;
+}
+.escolhas ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.escolhas ul li{
+    width: 33%;
+    border: 1px solid black;
+    background: gold;
+    
+}
+
+.escolhas ul li figure img{
+    width: 100%;
+}
+
+.painel{
+    background-color: lightgray;
+    width: 30%;
+}
+.ganhos{
+    display: inline;
+    font-size: 20px;
+    font-weight:bold;
+}
+.resultado{
+    font-size:20px;
+    font-weight:bold;
+}
+
+
+@media (min-width: 769px){
+   
+    .title{
+        font-size: 50px;
+    }
+    .container div{
+        width: 50%;
+    }
+    .container div button{
+        font-size: 25px;
+    }
+    .meio{
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding-left: 100px;
+        padding-top: 30px;
+        width: 70%;
+    }
+    .instruction{
+        width: 30%
+    }
+    .escolhas{
+        width: 60%;
+    }
+    .painel{
+        width: 16%;
+    }
+
+}
+@media (min-width: 1000px){
+    .meio{
+        width: 50%;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Jogo</title>
+</head>
+<body>
+    <div class="Escolhar">
+        <div class="escolhas">
+            <ul>
+                <li id="pedra_escolha" onclick="escolha('pedra')">
+                    <figure>
+                        <img src="./img/pedra-removebg-preview.png" alt="pedra">
+                    </figure>
+                </li>
+                <li id="papel_escolha" onclick="escolha('papel')">
+                    <figure>
+                        <img src="./img/papel-removebg-preview.png" alt="papel">
+                    </figure>
+                </li>
+                <li id="tesoura_escolha" onclick="escolha('tesoura')">   
+                    <figure>
+                        <img src="./img/tesoura-removebg-preview.png" alt="tesoura">
+                    </figure>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div class="resultado">
+            Você: <span id="vc"></span> | Computador: <span id="computador"></span>
+        </div>
+    </div>
+
+    <div class="painel">
+        <div class="ganhos">
+            Rodada: <span id="rodada"></span>
+            <br>
+            Você: <span id="vitorias"></span>
+            <br>
+            Adversário: <span id="vitoriasInimigas"></span>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
