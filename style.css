@@ -36,6 +36,11 @@ body{
     flex-direction: column;   
 }
 
+#imagemIndex{
+    width: 60%;
+    margin-bottom: 40px;
+    transform: translateX(-10%);
+}
 .btn{
     background-color: white;
     border: 2px solid rgba(0, 0, 0, 0.473);
@@ -136,7 +141,7 @@ body{
 
 .painel{
     background-color: lightgray;
-    width: 30%;
+    width: 150px;
 }
 .ganhos{
     display: inline;
@@ -157,8 +162,11 @@ body{
     .container div{
         width: 50%;
     }
+    #imagemIndex{
+        width: 30%;
+    }
     .container div button{
-        font-size: 25px;
+        font-size: 20px;
     }
     .meio{
         justify-content: flex-start;
@@ -175,7 +183,7 @@ body{
         width: 60%;
     }
     .painel{
-        width: 16%;
+        width: 150px;
     }
 
 }
